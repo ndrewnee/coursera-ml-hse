@@ -10,8 +10,8 @@ from sklearn.preprocessing import scale
 def get_sorted_k_scores(k_fold, classes, attributes):
     """Does K-neighbours classification.
     Returns sorted by score list of scores and K"""
-    # generation range of K from 1 to 50
     k_scores = []
+    # generation range of K from 1 to 50
     k_range = xrange(1, 51)
     for k in k_range:
         # creating new classifier with provided K
